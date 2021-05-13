@@ -159,7 +159,9 @@ console.log(joe);
 
 
 
-Student.prototype.greeting = () =>`Hi, my name is ${this.name}`;
+Student.prototype.greeting = function(){
+  return `Hi, my name is ${this.name}`;
+} 
 
 
 // TODO: Uncomment the following line of code to see the output in the browser console
@@ -170,7 +172,9 @@ console.log(joe.greeting());
 
 
 
-Student.courseName = () => 'This student is enrolled in Code 301.';
+Student.courseName = function(){
+  return 'This student is enrolled in Code 301.';
+} 
 
 
 // TODO: Uncomment the following line of code to see the output in the browser console
@@ -194,8 +198,8 @@ console.log(joe.scopeArrow());
 
 // TODO: Write a COMMENT below to answer the following questions.
 // 1. What is "this" when joe.scope() is invoked?
-// 
+// The constructor function (joe object).
 // 2. What is "this" when joe.scopeArrow() is invoked?
-// 
+// Window object.
 // 3. Explain why "this" is different when an arrow function is used.
-// 
+// To be honest, I don't know. 
